@@ -32,7 +32,7 @@ function Main(props) {
         //make post request to update cheese
         await fetch(URL + id, {
             method: "put",
-            header: {
+            headers: {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify(paneer)
